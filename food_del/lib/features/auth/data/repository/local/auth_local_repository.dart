@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:food_del/core/failure/failure.dart';
-import 'package:food_del/features/auth/data/data_source/local/auth_local_datasourse.dart';
+import 'package:food_del/features/auth/data/data_source/local/auth_local_datasource.dart';
 import 'package:food_del/features/auth/domain/entity/auth_entity.dart';
 import 'package:food_del/features/auth/domain/repository/auth_repository.dart';
 

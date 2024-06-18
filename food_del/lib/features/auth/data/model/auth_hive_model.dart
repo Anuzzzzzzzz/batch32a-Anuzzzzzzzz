@@ -23,8 +23,7 @@ class AuthHiveModel {
   @HiveField(2)
   final String lname;
 
-  @HiveField(3)
-  final String phone;
+
 
   // @HiveField(4)
   // final BatchHiveModel batch;
@@ -43,7 +42,6 @@ class AuthHiveModel {
     String? studentId,
     required this.fname,
     required this.lname,
-    required this.phone,
     // required this.batch,
     // required this.courses,
     required this.username,
@@ -56,9 +54,6 @@ class AuthHiveModel {
           studentId: '',
           fname: '',
           lname: '',
-          phone: '',
-          // batch: BatchHiveModel.empty(),
-          // courses: [],
           username: '',
           password: '',
         );
@@ -68,9 +63,6 @@ class AuthHiveModel {
         id: studentId,
         fname: fname,
         lname: lname,
-        phone: phone,
-        // batch: batch.toEntity(),
-        // courses: CourseHiveModel.empty().toEntityList(courses),
         username: username,
         password: password,
       );
@@ -80,9 +72,6 @@ class AuthHiveModel {
         studentId: const Uuid().v4(),
         fname: entity.fname,
         lname: entity.lname,
-        phone: entity.phone,
-        // batch: BatchHiveModel.empty().fromEntity(entity.batch),
-        // courses: CourseHiveModel.empty().fromEntityList(entity.courses),
         username: entity.username,
         password: entity.password,
       );
@@ -93,6 +82,6 @@ class AuthHiveModel {
 
   @override
   String toString() {
-    return 'studentId: $studentId, fname: $fname, lname: $lname, phone: $phone, username: $username, password: $password';
+    return 'studentId: $studentId, fname: $fname, lname: $lname,  username: $username, password: $password';
   }
 }

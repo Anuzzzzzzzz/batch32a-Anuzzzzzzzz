@@ -15,8 +15,6 @@ final authViewModelProvider = StateNotifierProvider<AuthViewModel, AuthState>(
   ),
 );
 
-
-
 class AuthViewModel extends StateNotifier<AuthState> {
   AuthViewModel(this.navigator, this.authUseCase) : super(AuthState.initial());
   final AuthUseCase authUseCase;
@@ -80,6 +78,4 @@ class AuthViewModel extends StateNotifier<AuthState> {
   void openHomeView() {
     navigator.openHomeView();
   }
-
- 
 }
