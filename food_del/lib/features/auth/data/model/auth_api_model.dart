@@ -1,7 +1,6 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:food_del/features/auth/domain/entity/auth_entity.dart';
 
-
 part 'auth_api_model.g.dart';
 
 @JsonSerializable()
@@ -38,13 +37,10 @@ class AuthApiModel {
   //api  From entity
   factory AuthApiModel.fromEntity(AuthEntity entity) {
     return AuthApiModel(
-      id: entity.id,
-      fname: entity.fname,
-      lname: entity.lname,
-      username: entity.username,
-      password:entity.password
-     
-    );
-    
+        id: entity.id,
+        fname: entity.fname,
+        lname: entity.lname,
+        username: entity.username,
+        password: entity.password);
   }
 }

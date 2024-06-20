@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:food_del/core/common/my_snackbar.dart';
-
-
+import 'package:food_del/features/home/presentation/viewmodel/home_view_model.dart';
 
 class DashboardView extends ConsumerStatefulWidget {
   const DashboardView({super.key});
@@ -22,7 +21,6 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dashboard View'),
@@ -40,7 +38,7 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
           ),
           IconButton(
             onPressed: () {
-            
+              ref.read(homeViewModelProvider.notifier).logout();
             },
             icon: const Icon(
               Icons.logout,
@@ -71,7 +69,6 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                 ),
               ),
             ),
-           
             Align(
               alignment: Alignment.centerLeft,
               child: Text(
@@ -82,7 +79,6 @@ class _DashboardViewState extends ConsumerState<DashboardView> {
                 ),
               ),
             ),
-           
           ],
         ),
       ),
