@@ -1,0 +1,43 @@
+name: ebuy
+description: "A new Flutter project."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: "^3.4.0" # This is the updated SDK constraint
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  hive_flutter: ^1.1.0
+  hive_generator: ^2.0.1
+  flutter_riverpod: ^2.5.1
+  equatable: ^2.0.5
+  build_runner: ^2.4.11
+  dio: ^5.4.3+1
+  awesome_dio_interceptor: ^1.2.0
+  dartz: ^0.10.1
+  uuid: ^4.4.0
+  image_picker: ^1.1.2
+  handle_wait_builder: ^0.9.0
+  permission_handler: ^11.3.1
+  path_provider: ^2.1.3
+  pretty_dio_logger: ^1.3.1
+  shared_preferences: ^2.2.3
+  json_annotation: ^4.9.0
+  json_serializable: ^6.8.0
+  logger: ^2.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
