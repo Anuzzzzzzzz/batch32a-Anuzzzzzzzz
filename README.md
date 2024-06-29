@@ -1,6 +1,6 @@
 # ebuy
 
-A new Flutter project.
+# Anuj Paudel Ebuy Mobile Application
 
 ## Getting Started
 

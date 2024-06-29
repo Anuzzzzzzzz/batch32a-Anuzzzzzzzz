@@ -23,6 +23,7 @@ class LoginViewState extends ConsumerState<LoginView> {
               _passwordController.text,
             );
       } catch (e) {
+        // ignore: use_build_context_synchronously
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(content: Text('Login failed: $e')),
         );
